@@ -1,0 +1,26 @@
+# 本地环境
+
+## TL;DR
+
+- 需要连接数据库、运行测试或调用 Provider 前，先读取本文件。
+- 测试数据库与用户数据库配置完全隔离，禁止交叉连接。
+- 密钥只放在本地未跟踪文件，不写入代码仓库。
+
+## Status
+
+Draft
+
+## 环境
+
+- Node.js 24.18.0，记录在 `.node-version`。
+- pnpm 11.9.0，通过 `package.json` 的 `packageManager` 字段固定。
+
+## 配置
+
+- `.env.example` 列出所有需要的变量名与说明，不包含真实值。
+- `.env` 保存本地真实配置，已被 Git 忽略。
+- 测试数据库使用 `TEST_DATABASE_URL`，用户数据库使用 `DATABASE_URL`，两者指向不同实例。
+
+## 待定
+
+- 具体数据库服务与 Provider 接入参数在第一阶段选型确定后补充。

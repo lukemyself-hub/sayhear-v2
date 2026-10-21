@@ -1,0 +1,17 @@
+node_modules/
+.pnpm-store/
+.next/
+dist/
+coverage/
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
+
+.codex/
+.claude/
+
+# 学习笔记存放在仓库外的固定位置，仓库内只保留指向它的本地符号链接
+study-notebook
