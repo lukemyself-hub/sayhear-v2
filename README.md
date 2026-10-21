@@ -19,7 +19,3 @@ pnpm install
 ```
 
 具体运行与验证命令随第一阶段实现补充。
-
-## 学习笔记
-
-学习笔记不在本仓库，固定在 `/Users/lukemyself/Documents/学习/AI/Agent Harness`，由主 Agent 根据对话整理。仓库内只保留被 Git 忽略的本地 `study-notebook` 符号链接，方便在各 worktree 直接打开。
