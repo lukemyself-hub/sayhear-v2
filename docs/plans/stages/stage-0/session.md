@@ -135,4 +135,4 @@ Luke 明确授权整理讨论产物、提交、推送、创建 PR 并合入 main
 
 跨阶段路线归入 `docs/plans/roadmap/`，阶段接续与证据归入 `docs/plans/stages/stage-N/`，后续功能使用 `features/<feature>/`。审计对应归入 `.audit/roadmap/`、`.audit/stages/stage-N/` 和 `.audit/tooling/`。ADR 保持统一索引，完整 SPEC 保持 Issue 真源，私人学习笔记仍在仓库外。
 
-文档 PR 合入前核对独立审查、结构脚本、引用与暂存范围。PR 地址在提交后登记，合入 SHA 与材料固定链接由 PR 和 Issue 回执承载。后续开发与新阶段必须从 fetch 后核实的最新 `origin/main` 新建分支，不续用讨论分支。阶段 1 先整理实施方案与测试资源前置，仍需验证取消传播、checkpoint、完整时间预算与恢复；学习回访继续覆盖最终输入、owner 隔离、日期与上下文预算。
+文档 PR 为 [#2](https://github.com/lukemyself-hub/sayhear-v2/pull/2)。合入前核对独立审查、结构脚本、引用与暂存范围，合入 SHA 与材料固定链接由 PR 和 Issue 回执承载。后续开发与新阶段必须从 fetch 后核实的最新 `origin/main` 新建分支，不续用讨论分支。阶段 1 先整理实施方案与测试资源前置，仍需验证取消传播、checkpoint、完整时间预算与恢复；学习回访继续覆盖最终输入、owner 隔离、日期与上下文预算。
