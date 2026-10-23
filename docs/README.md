@@ -34,6 +34,9 @@ Draft
 | `tasks/` | 短期 working spec |
 | `specs/` | 已发布 SPEC 的轻量索引 |
 | `agents/` | Agent 操作规则 |
+| [`plans/`](plans/README.md) | 跨阶段路线、阶段接续、研究证据与 SPEC 入口 |
+
+执行审计按路线、阶段与工具归类，见 [`.audit/README.md`](../.audit/README.md)。
 
 ## 文档状态
 
@@ -44,5 +47,5 @@ Draft
 
 ## Open questions
 
-- `docs/decisions.md` 的 ADR 索引在第一份 ADR 建立时同步创建。
+- 已接受决定见 [`decisions.md`](decisions.md)，新增重要决定时同步维护 ADR 索引。
 - `architecture/`、`product/` 的具体文件在首次涉及该领域的设计前创建。

@@ -33,3 +33,11 @@
 ### Issue tracker
 
 Issues 与 SPEC 跟踪在 GitHub Issues。读取 [`docs/agents/issue-tracker.md`](docs/agents/issue-tracker.md)。
+
+### Triage labels
+
+五个标准 triage 角色直接使用默认 label 名（`needs-triage` / `needs-info` / `ready-for-agent` / `ready-for-human` / `wontfix`）。读取 [`docs/agents/triage-labels.md`](docs/agents/triage-labels.md)。
+
+### Domain docs
+
+单上下文：根目录 `GLOSSARY.md` 加 `docs/adr/`，ADR 通过 [`docs/decisions.md`](docs/decisions.md) 的主题检索定位。读取 [`docs/agents/domain.md`](docs/agents/domain.md)。

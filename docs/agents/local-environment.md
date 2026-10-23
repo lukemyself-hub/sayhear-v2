@@ -10,11 +10,6 @@
 
 Draft
 
-## 环境
-
-- Node.js 24.18.0，记录在 `.node-version`。
-- pnpm 11.9.0，通过 `package.json` 的 `packageManager` 字段固定。
-
 ## 配置
 
 - `.env.example` 列出所有需要的变量名与说明，不包含真实值。
