@@ -2,7 +2,7 @@
 
 逐条对照本次会话的准出标准。每条给出实际证据与未完成部分。
 
-- [x] 形成本地 Markdown 计划书。主计划 `docs/plans/sayhear-build-and-learning-plan.md`，研究依据 `docs/plans/sayhear-route-research.md`。均为仓库内未提交文件。
+- [x] 形成本地 Markdown 计划书。主计划 `docs/plans/roadmap/sayhear-build-and-learning-plan.md`，研究依据 `docs/plans/roadmap/sayhear-route-research.md`。均为仓库内未提交文件。
 - [x] 核心技术路线与功能迭代路径。主计划给出 TypeScript Web 主线、AI SDK 优先与 Mastra 替代条件、托管 Postgres 候选、Provider 双路径、运行详情与后台执行分层。
 - [x] 每个阶段含目标、feature & spec、验收标准、学习活动与理解证据、待确认问题。阶段 0 至 5 共六节。脚本检查 feature & spec、验收标准、学习活动与理解证据、待确认问题四个小标题。目标写在各阶段标题下的首段，不是小标题，脚本不检查它，由人工核对。
 - [x] 保留长期愿景。阶段 6 至 10 覆盖用户控制、日记、Open Loop、语音和完整多用户，各含目标、验收、学习重点和待确认问题。

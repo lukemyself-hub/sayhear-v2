@@ -1,8 +1,8 @@
 # SayHear v2 路线候选：只读交叉评审
 
 评审日期 2026-10-20。评审对象：`/tmp/arena-sayhear-roadmap/candidate-{1,2,3,4}/plan.md`。
-输入：`/Users/lukemyself/Projects/SayHear-v2/.audit/sayhear-roadmap-review-contract.md`、`/Users/lukemyself/Projects/SayHear-v2/CONTEXT.md`。
-未读取 `.audit/sayhear-roadmap-synthesis.md`。未修改仓库，未做新的网页调研，未创建外部 Issue。
+输入：`/Users/lukemyself/Projects/SayHear-v2/.audit/roadmap/sayhear-roadmap-review-contract.md`、`/Users/lukemyself/Projects/SayHear-v2/CONTEXT.md`。
+未读取 `.audit/roadmap/sayhear-roadmap-synthesis.md`。未修改仓库，未做新的网页调研，未创建外部 Issue。
 本次评审无法复核任何候选的网页断言，所有版本号、价格、配额、时延与竞品效果数字一律视为候选自报，未经复核，不构成共识。
 
 ## 一、评分表（每项 0-5，满分 30）

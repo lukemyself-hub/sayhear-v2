@@ -4,13 +4,13 @@
 
 逐项结果如下。
 
-- [x] 存在本地 Markdown 主计划和可追溯的研究依据。`docs/plans/sayhear-build-and-learning-plan.md` 与 `docs/plans/sayhear-route-research.md`。
+- [x] 存在本地 Markdown 主计划和可追溯的研究依据。`docs/plans/roadmap/sayhear-build-and-learning-plan.md` 与 `docs/plans/roadmap/sayhear-route-research.md`。
 - [x] 保留 CONTEXT 的长期愿景、年底范围、Vercel Web、旧 Portal 复用与未来多用户边界。长期愿景在阶段 6 至 10。
 - [x] Harness、Memory、数据库、Provider 与配套服务分层比较。见研究依据的分层表。
 - [x] 成熟替代路线具有适用条件和不采用理由，不只列名。每条都写了匹配与代价。
 - [x] 产品和市场研究具体到典型产品及其启发和证据局限。Tolan 案例正文 403，只按供应商自述处理。
-- [x] 五份旧资料被核对，教训与建议有源文件指针。摘要副本在 `.audit/sayhear-roadmap-evidence/`，其使用限定见同目录 README。
-- [x] 每阶段含目标、feature & spec、验收标准、学习活动与理解证据、待确认问题。由 `.audit/verify-sayhear-roadmap.py` 检查后四项小标题。目标以阶段标题下的首段表达，不作为独立小标题，因此脚本不检查它。
+- [x] 五份旧资料被核对，教训与建议有源文件指针。摘要副本在 `.audit/roadmap/sayhear-roadmap-evidence/`，其使用限定见同目录 README。
+- [x] 每阶段含目标、feature & spec、验收标准、学习活动与理解证据、待确认问题。由 `.audit/roadmap/verify-sayhear-roadmap.py` 检查后四项小标题。目标以阶段标题下的首段表达，不作为独立小标题，因此脚本不检查它。
 - [x] 年底各阶段预算合计不超过约 100 小时，包含讨论、阅读、体验、讲解与记录。85 小时计划加 15 小时缓冲。
 - [x] 有延期处理和削减顺序，范围变化要与 Luke 讨论。见延误处理一节。
 - [x] 长期阶段说明日记、纠正遗忘、Open Loop、语音与多用户的依赖，不承诺未经估算的日期。
@@ -18,7 +18,7 @@
 - [x] 真实用户与测试数据隔离，私人内容不自动进入仓库、测试集或外部遥测。含测试库护栏与故意交叉连接测试。
 - [x] 来源能支持所附结论，版本、价格和效果未知不伪装为事实。候选自报数字一律未采纳。
 - [x] 四候选均完整读取并逐项评分，跨评审在候选完成后进行。评分由跨评审席位独立完成，主 Agent 读完后同意其结论。席位模型为 Opus，原因是 Fable 席位返回 429。B 席位返回了时延与成本基线问题，已采纳。主 Agent 的评分表未落盘，其判断只体现在草稿与最终计划中。
-- [x] 综合说明记录基底、移入内容、未采纳内容和复核结果。见 `.audit/sayhear-roadmap-synthesis.md`。
+- [x] 综合说明记录基底、移入内容、未采纳内容和复核结果。见 `.audit/roadmap/sayhear-roadmap-synthesis.md`。
 
 未纳入本清单的两项事后补充。
 

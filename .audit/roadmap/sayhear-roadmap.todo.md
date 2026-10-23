@@ -17,7 +17,7 @@
 1. 核对 CONTEXT、ADR 索引、五份旧资料。
 2. 四个模型依据同一任务独立调研和形成候选，每个模型只写各自目录。
 3. 候选完成后跨模型评分，主 Agent 阅读全部候选并复核关键一手来源。
-4. 写入 docs/plans/sayhear-build-and-learning-plan.md，另存研究依据和综合说明。
+4. 写入 docs/plans/roadmap/sayhear-build-and-learning-plan.md，另存研究依据和综合说明。
 5. 检查每阶段目标、feature & spec、验收、学习证据、待确认问题，以及来源、边界和时间预算。
 
 ## 评分标准

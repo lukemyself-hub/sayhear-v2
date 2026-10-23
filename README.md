@@ -7,6 +7,6 @@ SayHear 的受控重建仓库。目标是建设一个供真实用户日常使用
 - 术语：[`GLOSSARY.md`](GLOSSARY.md)
 - 文档地图：[`docs/README.md`](docs/README.md)
 
-当前处于起点阶段，尚未选定 Harness 框架、数据库与 Provider，也没有功能代码。第一步与 Luke 共同确定第一阶段搭建和学习计划。
+阶段 0 已完成主要选型、有限验证与规格讨论，目前尚无产品功能代码。阶段 1 的执行范围见 [Issue #1](https://github.com/lukemyself-hub/sayhear-v2/issues/1)，路线与阶段资料见[计划目录](docs/plans/README.md)，已接受决定见 [ADR 索引](docs/decisions.md)。后续开发和新阶段从最新 `origin/main` 建立工作分支。
 
 具体运行与验证命令随第一阶段实现补充。

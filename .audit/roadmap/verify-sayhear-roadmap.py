@@ -1,9 +1,9 @@
 from pathlib import Path
 import re
 
-root = Path(__file__).resolve().parents[1]
-plan = root / "docs/plans/sayhear-build-and-learning-plan.md"
-research = root / "docs/plans/sayhear-route-research.md"
+root = Path(__file__).resolve().parents[2]
+plan = root / "docs/plans/roadmap/sayhear-build-and-learning-plan.md"
+research = root / "docs/plans/roadmap/sayhear-route-research.md"
 text = plan.read_text()
 sections = re.split(r"(?m)^## 阶段 ", text)[1:]
 assert len(sections) == 6, f"阶段数量不符，实际为 {len(sections)}"

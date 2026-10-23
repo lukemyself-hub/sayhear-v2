@@ -11,7 +11,10 @@ coverage/
 .DS_Store
 
 .codex/
-.claude/
+.claude/*
+!.claude/skills/
+.claude/skills/*
+!.claude/skills/learning-stage
 
 # 学习笔记存放在仓库外的固定位置，仓库内只保留指向它的本地符号链接
 study-notebook

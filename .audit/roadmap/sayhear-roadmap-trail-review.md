@@ -4,7 +4,7 @@
 
 2. TSV 第 17 行（cross-judge）写“改用同族默认”，实际是 Fable 429 后改派 Opus，而 Opus 正是候选 1 的作者。选出候选 1 的评审与候选 1 同模型，独立性被削弱；该行和 cross-judge.md 都没有记录改派后的模型，且该行状态仍是 open，尽管交叉评审已完成并被用于 pick。这个替换是本轮最需要 Luke 知道的隐藏风险。
 
-3. TSV 第 20 行（review）的证据 .audit/sayhear-roadmap-interrogate.md 已经过期且归属错误：文件仍写 B“待返回”、Consider“待其他评审结果”，把时延发现记在 C 名下，而 C 实际返回的是 14 项 warning 加 2 项 nit，B 自己也报告了时延问题。C 的 14 项、被采纳的 6 项、被拒绝的 8 项都没有写进该文件，但综合说明第 44 行说“未被采纳的部分……保留在 .audit/sayhear-roadmap-interrogate.md”。驱动了九处计划修改的评审内容只存在于 transcript。
+3. TSV 第 20 行（review）的证据 .audit/roadmap/sayhear-roadmap-interrogate.md 已经过期且归属错误：文件仍写 B“待返回”、Consider“待其他评审结果”，把时延发现记在 C 名下，而 C 实际返回的是 14 项 warning 加 2 项 nit，B 自己也报告了时延问题。C 的 14 项、被采纳的 6 项、被拒绝的 8 项都没有写进该文件，但综合说明第 44 行说“未被采纳的部分……保留在 .audit/roadmap/sayhear-roadmap-interrogate.md”。驱动了九处计划修改的评审内容只存在于 transcript。
 
 4. TSV 第 19 行与第 26 行：最后一次记录在案的结构检查是 05:11:18，早于 05:12:47 至 05:15:49 的实质修改；之后的 05:14:36、05:16:02、05:21:35 三次运行只出现在 transcript。第 26 行在 05:21:10 标 VERIFIED，比最后一次脚本运行早 25 秒。只读 TSV 的人会以为验证发生在修改之前。另外 exit-check 第 7 行说每阶段五个字段都由脚本检查，脚本实际只检查四个小标题，目标段是散文，未被检查。
 
@@ -18,6 +18,6 @@
 
 9. TSV 第 25 行把 05:19:54 的上下文压缩写成“上一轮交接”，并说第 2 至 24 行“未由本轮写入”。transcript 显示这是同一个连续会话，同一 Agent 写下了那些行。这个措辞会让前 24 行看起来像另一次运行或另一个 Agent 的产物，而 pick、cross-judge、评分这些最需要独立审视的判断恰好都在那一段。
 
-10. TSV 第 3、6、8、17 行仍把证据指向 /tmp/arena-sayhear-roadmap/ 和 /tmp/sayhear-roadmap-grounding/，而第 12 行已经因为“临时目录不适合日后恢复”把同样的文件复制到 .audit/sayhear-roadmap-evidence/。持久副本存在且哈希一致，但上述四行的指针按原样会失效，也没有指向真正被审计的那份副本。
+10. TSV 第 3、6、8、17 行仍把证据指向 /tmp/arena-sayhear-roadmap/ 和 /tmp/sayhear-roadmap-grounding/，而第 12 行已经因为“临时目录不适合日后恢复”把同样的文件复制到 .audit/roadmap/sayhear-roadmap-evidence/。持久副本存在且哈希一致，但上述四行的指针按原样会失效，也没有指向真正被审计的那份副本。
 
 说明：TSV 第 7 行是唯一的 https 证据格（OpenAI Agents JS 的 models 指南），本次无法联网复核页面正文，不对其内容作判断。transcript 能证明第一次抓取只有导航、第二次抓取才确认 ModelProvider，source-checks.md 也记录了这一点，但页面本身没有被重新读取。
