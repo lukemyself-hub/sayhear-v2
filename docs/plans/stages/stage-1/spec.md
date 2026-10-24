@@ -7,7 +7,7 @@
 ## 实施前阅读
 
 1. 读取 Issue 正文及明确指向的材料。
-2. 读取 [CONTEXT.md](../../../../CONTEXT.md)，按[决策索引](../../../decisions.md)检索所有相关 ADR。当前已接受 ADR 0001–0008。
+2. 读取 [CONTEXT.md](../../../../CONTEXT.md)，按[决策索引](../../../decisions.md)检索所有相关 ADR。当前已接受 ADR 0001–0015；完整数据结构仍在 [canonical 功能接续](features/canonical-data-model/session.md)中讨论，不能据 ADR 数量推断阶段设计全部完成。
 3. 运行测试、使用环境变量或数据库前，读取[本地环境规则](../../../agents/local-environment.md)。
 4. 核对[阶段 0 接续记录](../stage-0/session.md)中的授权、已验证能力及待验证项。
 
