@@ -9,7 +9,7 @@ status: accepted
 ## 决定
 
 - owner 即 Supabase Auth 用户 ID（`auth.users.id`），不另建应用账号表。阶段 1 不需要账号级产品属性；以后需要时再加，不影响已有 owner 列。
-- 阶段 1 的 owner 作用域记录：连续会话、消息（用户、assistant、系统、合成工具调用与结果）、run、attempt、输入快照。每类记录**直接**带 `owner_id`，RLS 策略逐表比对本列，不通过连表推断归属。
+- 阶段 1 的 owner 作用域记录：连续会话、消息（用户、assistant、系统、合成工具调用与结果）、run、attempt、输入快照。每类记录**直接**带 `owner_id`，RLS 策略逐表比对本列，不通过连表推断归属。这里列举内容类别，不规定每类各占一行；消息行粒度见 [ADR 0015](0015-message-parts-and-ordering.md)，系统记录的角色与选择规则仍待确认。
 - 跨表引用同时带 owner：子记录引用父记录时以 `(owner_id, 父 id)` 组合外键约束，保证两者同属一人。原因是 Postgres 的外键检查绕过 RLS（Postgres 文档 Row Security Policies 一节），仅凭 RLS 无法阻止把自己的 run 挂到他人消息上。只在真实存在的引用上使用，不在无引用的表上冗余铺设。
 - 阶段 1 的引用关系与数量：
 

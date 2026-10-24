@@ -13,6 +13,8 @@ status: accepted
 
 ## 三条护栏
 
+以下为 SayHear 采用的约束，优先于证据报告中的早期建议。Proxy 不是 SDK 唯一有能力续期的位置；本设计将续期限定在 Proxy 与 Route Handler 两类入口。
+
 1. **续期只在能写 cookie 的地方做。** 续期和 Set-Cookie 只能出现在 Proxy 与 Route Handler 中；Server Component 只读数据，不承担续期。原因：Server Component 写不了 cookie，官方模板还会吞掉写入错误。续期因此会在服务端悄悄成功，新令牌却送不回浏览器。浏览器下次带着已轮换的旧 refresh token 来请求，可能导致会话被撤销，表现为偶发被登出，很难复现。
 2. **私人页面不缓存。** 读写私人数据的页面和接口一律动态渲染，并在响应上设置 `Cache-Control: private, no-store`（与 ADR 0011 一致）。不依赖框架缓存的默认值，必须在验收中检查。
 3. **入口要薄。** 聊天主链路（`getUser()` 确认会话 → 必要时续期 → 原子写 → 返回流式响应）放在不依赖框架的服务端模块中，只接收标准 `Request`、返回标准 `Response`。Route Handler 只负责转交。业务核心不调用 Next 专有 API。

@@ -8,6 +8,10 @@ SayHear 的学习目标是理解并掌控 Harness：模型上下文如何组成�
 
 证据见[运行层本地验证](../plans/stages/stage-0/evidence/stage-0-runtime-validation.md)与[运行层调研](../plans/stages/stage-0/evidence/stage-0-runtime-evidence.md)。
 
+## 版本核对提示（2026-10-24）
+
+以下实验表述保留其原始版本背景，不作为新版 API 的直接实施说明。后续对 `ai@7.0.153` 的[定点核查](../plans/stages/stage-1/features/canonical-data-model/evidence/ai-sdk-message-persistence-evidence.md)发现顶层系统指令参数为 `instructions`，`request.messages/body` 须通过 include 显式保留，回调与流接口也存在命名变化。实施前按锁定版本核实；未重新运行原实验，不将源码核查写成实测通过。
+
 ## 取舍与边界
 
 工具循环、历史截断、重试与运行记录需要自行实现，早期进度较慢。实现时须遵守已实测的行为：系统提示走顶层 `system`，不能放入 `messages`；裸 `streamText` 与 `generateText` 默认只执行 1 步，工具循环需显式 `stopWhen`；SDK 默认重试与应用层 fallback 不得叠加，阶段 1 设 `maxRetries: 0`；中止须结合取消信号和 SDK 终态事件判断；[真实链路验证](../plans/stages/stage-0/evidence/stage-0-live-provider-validation.md)观察到 `fullStream` 的 `abort` 事件，不能假定所有消费方式都会向调用方抛 `AbortError`。

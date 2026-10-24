@@ -1,6 +1,6 @@
 # 阶段 1 功能讨论索引
 
-完整阶段范围以 [Issue #1](https://github.com/lukemyself-hub/sayhear-v2/issues/1) 为准。以下是本地设计讨论与临时草稿，不代表已实现或授权发布。
+完整阶段范围以 [Issue #1](https://github.com/lukemyself-hub/sayhear-v2/issues/1) 为准。以下是设计讨论与临时草稿，不代表已实现或授权开始实现。
 
 | 功能 | 状态 | 入口 |
 | --- | --- | --- |
