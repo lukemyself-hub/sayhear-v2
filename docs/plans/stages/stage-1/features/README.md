@@ -9,4 +9,4 @@
 
 下一会话从 canonical-data-model 的[接续记录](canonical-data-model/session.md)恢复。消息行粒度、run 关联、删除清空与并发保护已接受；停点为尚未确认的系统记录方案，之后讨论合成工具记录、会话、run/attempt 和快照布局。两项功能共享 ADR 0010 的归属契约，字段设计不回写到身份功能讨论中。
 
-2026-10-24 Luke 授权整理当前 worktree 文档并合入 main。本轮交付只覆盖文档与接续，不代表产品已实现、验收已运行，或身份 SPEC 草稿已发布为执行 Issue。交付 PR 创建后在此登记；合入状态以 GitHub 回执为准。
+2026-10-24 Luke 授权整理当前 worktree 文档并合入 main。本轮交付只覆盖文档与接续，不代表产品已实现、验收已运行，或身份 SPEC 草稿已发布为执行 Issue。交付见 [PR #4](https://github.com/lukemyself-hub/sayhear-v2/pull/4)，目标分支 main；合入状态以 GitHub 回执为准。
