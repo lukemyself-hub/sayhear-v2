@@ -29,6 +29,7 @@ Draft
 | [0013](adr/0013-identity-and-isolation-acceptance.md) | 身份与隔离验收分别覆盖应用、数据库、环境护栏和部署链路 | Accepted | 验收、登录续期、登出重放、RLS、环境误配 |
 | [0014](adr/0014-web-framework-nextjs-app-router.md) | Web 框架采用 Next.js App Router（Node runtime），以三条护栏约束续期、缓存与入口 | Accepted | Web 框架、cookie 续期、缓存、v1 设计复用、迁移 |
 | [0015](adr/0015-message-parts-and-ordering.md) | 消息采用 AI SDK parts，使用独立 seq 排序并保留产品状态 | Accepted | 数据模型、消息、parts、排序、状态、运行记录 |
+| [0016](adr/0016-per-request-system-instructions.md) | 每次模型请求显式提供有效产品指令 | Accepted | 每次请求携带指令，仓库独立文件随部署维护；阶段 1 不设独立 system 聊天记录；文件版本仍待确认 |
 
 ## 主题检索
 
@@ -42,6 +43,7 @@ Draft
 | 地区与部署 | [0002](adr/0002-hosting-region.md)、[0014](adr/0014-web-framework-nextjs-app-router.md) |
 | Web 框架、页面续期与缓存 | [0014](adr/0014-web-framework-nextjs-app-router.md) |
 | Harness 与运行详情 | [0004](adr/0004-harness-on-ai-sdk.md)、[0005](adr/0005-chat-experience-and-run-record.md) |
+| 系统指令、每轮上下文与输入快照 | [0004](adr/0004-harness-on-ai-sdk.md)、[0005](adr/0005-chat-experience-and-run-record.md)、[0016](adr/0016-per-request-system-instructions.md) |
 | 聊天体验与登录 | [0005](adr/0005-chat-experience-and-run-record.md)、[0011](adr/0011-stage-1-login-lifecycle.md) |
 | 数据模型 | [0008](adr/0008-continuous-conversation.md)、[0010](adr/0010-minimal-data-contract-and-owner.md)、[0015](adr/0015-message-parts-and-ordering.md) |
 | 消息格式、parts、排序与生成状态 | [0015](adr/0015-message-parts-and-ordering.md) |
