@@ -13,6 +13,8 @@
 
 ## 0. 版本基线
 
+后续校准（2026-10-24）：主 Agent 另行核对了[实际请求捕获时序](request-snapshot-capture-timing.md)。本报告后文“自行组装即可替代 SDK 最终快照”的推断不采用，步骤与结束回调也不能单独覆盖全部失败请求。Provider 专属自定义 fetch 的发送前捕获是源码支持的候选边界，保存再发送方案尚待讨论，未实测。
+
 - 【源码】npm latest 为 7.0.153。ADR 0004 的本地验证基于 7.0.148，相差 5 个补丁版本。
 - 【源码】7.0.149 新增 finishReason `interrupted`，CHANGELOG 明言：即使是补丁版，扩展公开联合类型也可能破坏类型检查。【推断】存储层不应用 Postgres enum 或 CHECK 穷举 finishReason、part type。
 
