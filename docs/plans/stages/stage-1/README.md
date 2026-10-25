@@ -8,7 +8,7 @@
 
 1. 读 [总计划](plan.md)，了解完整范围、依赖、设计与学习进度。
 2. 读 [总接续](session.md)，核对当前授权、停点、阻塞及下一动作。
-3. 进入 [canonical 数据结构接续](features/canonical-data-model/session.md)，从尚未确认的系统记录方案继续。
+3. 阅读 [M2 收尾稿](features/canonical-data-model/spec-draft.md)及[状态卡](features/canonical-data-model/session.md)。本会话仅收尾 M2，M2 方案已整体接受，设计收口；M3 后续单独开新会话。
 
 本次只补录规划并继续讨论，不开始产品实现。Luke 于 2026-10-24 确认总计划的九个模块，以及先继续 canonical 数据结构、再按依赖细化其余模块的安排；已接受的 ADR 不重新表决。设计收口、SPEC 发布、文档合入、产品实现和验收分别记录。
 

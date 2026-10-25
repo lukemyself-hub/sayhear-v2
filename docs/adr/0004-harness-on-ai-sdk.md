@@ -14,6 +14,8 @@ SayHear 的学习目标是理解并掌控 Harness：模型上下文如何组成�
 
 ## 取舍与边界
 
+请求快照捕获的后续核查（2026-10-24）：同版本源码显示，步骤与结束回调不是覆盖全部失败请求的唯一依据；所选 compatible Provider 的自定义 fetch 可接收转换后的序列化请求体，见[定点证据](../plans/stages/stage-1/features/canonical-data-model/evidence/request-snapshot-capture-timing.md)。发送前先持久化输入记录已按 ADR 0010 接受，首版引用表示见 M2 收尾规格，不将源码核查当作运行通过，亦不以自行组装的消息列表代替最终输入。
+
 工具循环、历史截断、重试与运行记录需要自行实现，早期进度较慢。实现时须遵守已实测的行为：系统提示走顶层 `system`，不能放入 `messages`；裸 `streamText` 与 `generateText` 默认只执行 1 步，工具循环需显式 `stopWhen`；SDK 默认重试与应用层 fallback 不得叠加，阶段 1 设 `maxRetries: 0`；中止须结合取消信号和 SDK 终态事件判断；[真实链路验证](../plans/stages/stage-0/evidence/stage-0-live-provider-validation.md)观察到 `fullStream` 的 `abort` 事件，不能假定所有消费方式都会向调用方抛 `AbortError`。
 
 AI SDK 提供每步实际发送的 `request.messages` 与 HTTP `request.body`、`onStepFinish` 与 `onFinish` 回调，以及默认记录输入输出的遥测接口；它不持久化记录，也不知道 SayHear 为什么选中或遗漏某条记忆。运行详情由 SayHear 自行保存与展示。
